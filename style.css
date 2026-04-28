@@ -1,1 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
+body {
+    background-color: #e0e0e0;
+    padding: 40px 0;
+}
+
+.cv-page {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    min-height: 1000px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.content-wrapper {
+    display: flex;
+    min-height: 1000px;
+}
+
+/* COLUMNA IZQUIERDA */
+.left-column {
+    width: 35%;
+    background-color: #cccccc; /* Gris de la imagen */
+    padding: 40px 30px;
+}
+
+.photo-container {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section-left {
+    margin-bottom: 35px;
+}
+
+.section-left h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.section-left p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* CONTACTO */
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+}
+
+.contact-list i {
+    margin-right: 12px;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+/* COLUMNA DERECHA */
+.right-column {
+    width: 65%;
+    padding: 40px 45px;
+    background-color: white;
+}
+
+.header-right h1 {
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    line-height: 1.4;
+    max-width: 90%;
+}
+
+h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.exp-item {
+    margin-bottom: 15px;
+}
+
+.bold { font-weight: 700; }
+.date { color: #666; font-size: 13px; margin: 5px 0; }
+.italic { font-style: italic; color: #444; font-size: 14px; margin-top: 5px;}
+.small { font-size: 13px; }
+
+.simple-list {
+    list-style: none;
+}
+
+.simple-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    .content-wrapper { flex-direction: column; }
+    .left-column, .right-column { width: 100%; }
+}
